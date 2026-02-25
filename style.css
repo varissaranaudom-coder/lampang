@@ -1,0 +1,93 @@
+/* กำหนดฟอนต์และพื้นหลัง */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* พื้นหลังสีเทาอ่อน */
+    color: #333;
+}
+
+/* ส่วนหัวและเมนู */
+header {
+    background-color: #4A90E2; /* สีฟ้าสะอาดตา */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ส่วนเนื้อหา */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* รูปโปรไฟล์ */
+.profile-img {
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* ใช้ 50% ถ้าต้องการวงกลม */
+    border: 3px solid #4A90E2;
+}
+
+/* ป้องกันเนื้อหาล่างไหลขึ้น */
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* กล่องรวมรูปงานอดิเรก */
+.hobby-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* กล่องแต่ละรูป */
+.hobby-item {
+    width: 200px;
+    text-align: center;
+}
+
+.hobby-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* ส่วนท้าย */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #f38b8b;
+    background-color: #834545;
+    margin-top: 30px;
+}
